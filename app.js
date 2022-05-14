@@ -18,10 +18,10 @@ window.addEventListener('load', () => {
             lat = posicion.coords.latitude;
 
             //Ubicacion auctual
-            // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a60682abb5d571699c6425dc0520d2a1`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=a60682abb5d571699c6425dc0520d2a1`;
 
             //Ubicacion por ciudad
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=mazatlan&lang=es&units=metric&appid=a60682abb5d571699c6425dc0520d2a1`;
+            // const url = `https://api.openweathermap.org/data/2.5/weather?q=mazatlan&lang=es&units=metric&appid=a60682abb5d571699c6425dc0520d2a1`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
